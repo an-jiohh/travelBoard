@@ -9,7 +9,7 @@ const MapComponent = (props) => {
     const markerPosition = { lat: props.lat, lng: props.lng };
 
     return (
-        <LoadScript googleMapsApiKey="AIzaSyCihYf2phT_nh6-A5ZOyx14JAtgvteZXwc">
+        <LoadScript googleMapsApiKey="API_KEY">
             <GoogleMap
                 mapContainerStyle={{ height: '400px', width: '800px' }} // 지도 컨테이너 크기 설정
                 center={mapOptions.center}
