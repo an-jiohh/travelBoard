@@ -5,9 +5,7 @@ export default function Header() {
         <header>
             <Link class="main-a" to="/">
                 <h1>
-                    안지호
-                    <br />
-                    개발 포트폴리오
+                    travel board
                 </h1>
             </Link>
         </header>

@@ -5,25 +5,25 @@ import axios from 'axios';
 import About from "./component/About";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import Header from "./component/Header";
-import Aside from "./component/Aside";
 import Communication from "./component/Communication";
 import Archiving from "./component/Archiving";
 import ProjectList from "./component/ProjectList";
 import Footer from "./component/Footer";
 import Project from "./component/Project";
+import TravelList from "./component/TravelList";
+import Login from "./component/Login";
+import TravelDetail from "./component/TravelDatail";
+import TravelForm from "./component/TravelForm";
 
 function App() {
     return (
         <BrowserRouter>
             <div className="App">
                 <Header />
-                <Aside />
                 <Routes>
-                    <Route path="/" exact element={<About />} />
-                    <Route path="/communication" element={<Communication />} />
-                    <Route path="/archiving" element={<Archiving />} />
-                    <Route path="/projectList" element={<ProjectList />} />
-                    <Route path="/:title" element={<Project />} />
+                    <Route path="/" exact element={<TravelList />} />
+                    <Route path="/travel/detail/:id" exact element={<TravelDetail/>} />
+                    <Route path="/travel/create" exact element={<TravelForm/>} />
                 </Routes>
                 <Footer />
             </div>
